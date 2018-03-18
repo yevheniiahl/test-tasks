@@ -1,0 +1,214 @@
+@import "fonts/fonts";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  width:1920px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ffd649;
+  height: 158px;
+    .logo{
+      padding-top: 46px;
+    }
+    .heading{
+      padding-top: 30px;
+      padding-right:0;
+      padding-left: 0;
+      text-align: center;
+      h1{
+        font: 45px 'AkrobatRegular', sans-serif;
+      }
+    }
+  #clock{
+        margin-top: 30px;
+        text-align: center;
+        .wrap{
+          display: inline-block;
+          .days, .hours, .minutes, .seconds{
+            width: 60px;
+            height: 60px;
+            border-radius: 500px;
+            border: 2px solid #000000;
+            font: 36px 'AkrobatRegular', sans-serif;
+            display: inline-block;
+          }
+          .smalltext{
+            font: 14px 'AkrobatRegular', sans-serif;
+            text-transform: uppercase;
+          }
+        }
+     }
+   }
+
+
+.block-first {
+  background-color: #e6e6e6;
+  padding-bottom: 55px;
+  .block-left {
+    margin-top: 92px;
+    h1{
+      font: 45px 'AkrobatSemiBold', sans-serif;
+    }
+    h2{
+      font: 36px 'AkrobatSemiBold', sans-serif;
+      margin-top: 30px;
+    }
+    .video{
+      margin-top: 134px;
+    }
+  }
+  .block-right{
+    p{
+      font: 24px 'Roboto', sans-serif;
+      font-weight: bolder;
+      margin-bottom: 0;
+    }
+    ol{
+      counter-reset: myCounter;
+      margin-top:76px;
+      li{
+        list-style: none;
+        background-color: #ffffff;
+        padding: 30px 50px;
+        margin-bottom: 30px;
+        position: relative;
+        width: 566px;
+        &:before{
+          counter-increment: myCounter;
+          content:counter(myCounter);
+          color: #000000;
+          background-color: #ffd649;
+          display: inline-block;
+          text-align: center;
+          width: 78px;
+          height: 78px;
+          border-radius: 50%;
+          font: 36px 'Roboto', sans-serif;
+          padding: 18px;
+          position: absolute;
+          left: -7%;
+          top: 10%;
+        }
+        p{
+          font: 18px 'Roboto', sans-serif;
+          margin-bottom: 0;
+          .bold{
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}
+
+.block-second {
+  background: url("../img/cover.png") no-repeat;
+  background-size: cover;
+  h1 {
+    font: 55px 'AkrobatSemiBold', sans-serif;
+    color: #ffffff;
+    margin-top: 90px;
+  }
+  .hor-line{
+    border-bottom: 4px solid #ffffff;
+    margin-top: 70px;
+  }
+  p {
+    font: 24px 'AkrobatSemiBold', sans-serif;
+    color: #ffffff;
+  }
+  .block1, .block2, .block3 {
+    height: 322px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 152px;
+    &:hover{
+      transform: scale(1.1);
+    }
+    p{
+      font: 36px 'AkrobatSemiBold', sans-serif;
+      color: #000000;
+      padding-top: 50px;
+      margin-bottom: 0;
+    }
+    button{
+      width: 253px;
+      height: 52px;
+      font: 30px 'AkrobatSemiBold', sans-serif;
+      background-color: #ffd649;
+      border-radius: 4px;
+      margin-top: 50px;
+    }
+  }
+  .block3{
+    background-color: #c8a53e;
+    padding-top: 14%;
+  }
+}
+
+#instafeed {
+  height: 468px;
+  background-color: #ffffff;
+  .name{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    p{
+      font: 35px 'RobotoMedium', sans-serif;
+    }
+  }
+  a{
+    display: block;
+    img{
+      display: block;
+      width: 360px;
+      height: 270px;
+      background-color: #d8d8d8;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  .main_row{
+    padding-top: 70px;
+  }
+  .logo{
+    p{
+      font: 48px 'Roboto', sans-serif;
+    }
+  }
+  ul{
+    font: 24px 'AkrobatSemiBold', sans-serif;
+    li{
+      list-style: none;
+      padding-bottom: 30px;
+      a{
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+        color: #dfba3f;
+        text-decoration: none;
+        cursor: url("../img/cursor.png") auto;
+        }
+      }
+    }
+  }
+  .bottom{
+    text-align: center;
+    font: 18px 'Roboto Light', sans-serif;
+    font-weight: lighter;
+    padding-top: 100px;
+  }
+}
+
